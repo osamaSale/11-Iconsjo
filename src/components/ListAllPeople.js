@@ -111,9 +111,9 @@ export const ListAllPeople = () => {
                                             <td>{new Date(`${row.dob}`).toLocaleDateString()}</td>
                                             <td>{row.is_male ? 'Male' : 'Not Male'}</td>
                                             <td>
-                                                <button className="btn btn-primary btn-sm me-1" onClick={() => setEditingPerson(row)} data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" >View</button>
-                                                <button className="btn btn-warning btn-sm me-1" onClick={() => setEditingPerson(row)}  >Edit</button>
-                                                <button className="btn btn-danger btn-sm " onClick={() => deletePerson(row.id)}  >Delete</button>
+                                                <button className="btn btn-primary btn-sm me-1" onClick={() => setEditingPerson(row)} data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" ><i className="bi bi-eye"></i></button>
+                                                <button className="btn btn-warning btn-sm me-1" onClick={() => setEditingPerson(row)}  ><i className="bi bi-pencil-fill"></i></button>
+                                                <button className="btn btn-danger btn-sm " onClick={() => deletePerson(row.id)}  ><i className="bi bi-trash"></i></button>
 
                                             </td>
                                         </tr>
