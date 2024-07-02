@@ -4,7 +4,6 @@
 
 <!--End clone area -->
 
-## stabilizing
 
 1. **Clone Repository:**
 
